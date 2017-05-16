@@ -2,6 +2,8 @@ package com.andresteran.mapas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -21,7 +23,31 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MapFragment mapFragment =(MapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        Button btnNormal =(Button) findViewById(R.id.id_btn_normal);
+        btnNormal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                m_maps.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+            }
+        });
+
+        Button btnSatelite =(Button) findViewById(R.id.id_btn_satelite);
+        btnNormal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                m_maps.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+            }
+        });
+        Button btnHibrido =(Button) findViewById(R.id.id_btn_hibrido);
+        btnNormal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                m_maps.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+            }
+        });
+
+
+        MapFragment mapFragment =(MapFragment) getFragmentManager().findFragmentById(R.id.mapas);
         mapFragment.getMapAsync(this);
 
     }

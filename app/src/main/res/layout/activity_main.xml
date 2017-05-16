@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.google.android.gms.maps.MapFragment"
-        map:cameraTargetlat="1,2089284"
+        map:cameraTargetLat="1,2089284"
         map:cameraTargetLng="-77,2779443"
         map:cameraZoom="17"
         />
@@ -31,18 +31,18 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/id_btn-satelite"
+                android:id="@+id/id_btn_satelite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/satelite"/>
 
             <Button
-                android:id="@+id/id_btn-normal"
+                android:id="@+id/id_btn_normal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Normal"/>
             <Button
-                android:id="@+id/id_btn-hibrido"
+                android:id="@+id/id_btn_hibrido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hibrido"/>
@@ -55,9 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:name="com.google.android.gms.maps.MapFragment"
-            map:cameraTargetlat="1,2089284"
-            map:cameraTargetLng="-77,2779443"
-            map:cameraZoom="17"/>
+            />
 
 
     </LinearLayout>
