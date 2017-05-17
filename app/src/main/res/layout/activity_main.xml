@@ -40,7 +40,8 @@
                 android:id="@+id/id_btn_dublin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Dublin"/>
+                android:text="@string/Dublin" />
+
             <Button
                 android:id="@+id/id_btn_tokyo"
                 android:layout_width="wrap_content"
