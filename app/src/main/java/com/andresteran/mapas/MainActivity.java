@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mapReady =true;
+        m_maps = googleMap;
         LatLng pasto = new LatLng(1.2089284, -77.2779443);
         CameraPosition target = CameraPosition.builder().target(pasto).zoom(15).build();
         m_maps.moveCamera(CameraUpdateFactory.newCameraPosition(target));
