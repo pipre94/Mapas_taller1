@@ -31,21 +31,21 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/id_btn_satelite"
+                android:id="@+id/id_btn_seattle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/satelite"/>
+                android:text="@string/seattle"/>
 
             <Button
-                android:id="@+id/id_btn_normal"
+                android:id="@+id/id_btn_dublin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Normal"/>
+                android:text="@string/Dublin"/>
             <Button
-                android:id="@+id/id_btn_hibrido"
+                android:id="@+id/id_btn_tokyo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hibrido"/>
+                android:text="@string/tokyo"/>
 
         </LinearLayout>
 

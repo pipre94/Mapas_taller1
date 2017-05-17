@@ -3,4 +3,7 @@
     <string name="Normal">Normal</string>
     <string name="satelite">Satelite</string>
     <string name="hibrido">Hibrido</string>
+    <string name="seattle">SEATTLE</string>
+    <string name="Dublin">DUBLIN</string>
+    <string name="tokyo">TOKYO</string>
 </resources>
